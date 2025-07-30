@@ -14,17 +14,17 @@ function Nav() {
     document.documentElement.classList.toggle("dark", dark);
   }, [dark]);
   return (
-    <div className="flex bg-primary h-30 justify-between">
+    <div className="flex p-2 bg-primary h-10 justify-between">
       <button
         onClick={() => setIsPagesOpened(!isPagesOpened)}
-        className="bg-primary p-1 rounded-xs"
+        className="bg-primary h-5 rounded-xs"
       >
         pages
       </button>
       <ul
         className={`${
-          isPagesOpened ? "left-0.5" : "-left-5"
-        } block justify-around items-center absolute top-15`}
+          isPagesOpened ? "left-0" : "-left-20"
+        } duration-200 p-2 bg-secondary rounded-xs block justify-around items-center absolute top-10`}
       >
         <li>
           <a href="#">Home</a>
@@ -42,11 +42,15 @@ function Nav() {
 
       <button
         onClick={() => setIsSocialsOpened(!isSocialsOpened)}
-        className="bg-primary p-1 rounded-xs"
+        className="bg-primary h-5 rounded-xs"
       >
         socials
       </button>
-      <ul className={`${isSocialsOpened ? "block" : "hidden"} items-center`}>
+      <ul
+        className={`${
+          isSocialsOpened ? "right-0" : "-right-20"
+        } duration-200 p-2 bg-secondary rounded-xs block justify-around items-center absolute top-10 `}
+      >
         <li>
           <a href="#">
             <Image
