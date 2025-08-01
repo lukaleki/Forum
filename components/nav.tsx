@@ -24,7 +24,7 @@ function Nav() {
       <ul
         className={`${
           isPagesOpened ? "left-0" : "-left-20"
-        } duration-200 p-2 bg-secondary rounded-xs block justify-around items-center absolute top-10`}
+        } duration-200 p-2 bg-primary rounded-b-xs block justify-around items-center absolute top-10`}
       >
         <li>
           <a href="#">Home</a>
@@ -49,7 +49,7 @@ function Nav() {
       <ul
         className={`${
           isSocialsOpened ? "right-0" : "-right-20"
-        } duration-200 p-2 bg-secondary rounded-xs block justify-around items-center absolute top-10 `}
+        } duration-200 p-2 bg-primary rounded-b-xs block justify-around items-center absolute top-10 `}
       >
         <li>
           <a href="#">
