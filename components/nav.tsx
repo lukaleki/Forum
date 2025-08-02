@@ -65,7 +65,7 @@ function Nav() {
         <li>
           <a href="#">
             <Image
-              className="aspect-9/10 object-contain dark:invert"
+              className="aspect-4/5 object-contain dark:invert"
               src={facebookIcon}
               width={25}
               height={25}
