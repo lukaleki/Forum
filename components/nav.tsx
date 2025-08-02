@@ -24,7 +24,7 @@ function Nav() {
       <ul
         className={`${
           isPagesOpened ? "left-0" : "-left-20"
-        } duration-200 p-2 bg-primary rounded-b-xs block justify-around items-center absolute top-10`}
+        } h-40 flex flex-col justify-around items-center absolute top-10 text-lg duration-200 p-2 bg-primary rounded-b-xs`}
       >
         <li>
           <a href="#">Home</a>
@@ -49,15 +49,15 @@ function Nav() {
       <ul
         className={`${
           isSocialsOpened ? "right-0" : "-right-20"
-        } duration-200 p-2 bg-primary rounded-b-xs block justify-around items-center absolute top-10 `}
+        } h-40 flex flex-col justify-evenly items-center absolute top-10 duration-200 p-2 bg-primary rounded-b-xs`}
       >
         <li>
           <a href="#">
             <Image
-              className="aspect-4/5 object-contain dark:invert"
+              className="dark:invert"
               src={discordIcon}
-              width={25}
-              height={25}
+              width={35}
+              height={30}
               alt={`discord png`}
             />
           </a>
@@ -65,10 +65,10 @@ function Nav() {
         <li>
           <a href="#">
             <Image
-              className="aspect-4/5 object-contain dark:invert"
+              className="dark:invert"
               src={facebookIcon}
-              width={25}
-              height={25}
+              width={35}
+              height={50}
               alt={`facebook png`}
             />
           </a>
@@ -76,9 +76,9 @@ function Nav() {
         <li>
           <a href="#">
             <Image
-              className="aspect-4/5 object-contain dark:invert"
+              className="dark:invert"
               src={emailIcon}
-              width={25}
+              width={35}
               height={25}
               alt={`email png`}
             />

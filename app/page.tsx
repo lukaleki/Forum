@@ -12,22 +12,33 @@ export default function Home() {
           labore vero eligendi.
         </p>
       </div>
-      <div>
+      <div className="grid place-items-center">
         <h1 className="m-4 text-3xl">Features</h1>
-        <ul className="list-decimal text-left wrap-anywhere">
+        <ul className="w-9/10 list-decimal text-left ">
           <li>
-            create and manage your{" "}
-            <strong className="text-secondary">units</strong>
+            <strong className="text-secondary">
+              Create and manage your units:
+            </strong>{" "}
+            build your army from ground-up!
           </li>
           <li>
-            Defeat enemies in{" "}
-            <strong className="text-secondary">battles</strong>
+            <strong className="text-secondary">
+              {" "}
+              Defeat enemies in battles:
+            </strong>{" "}
+            slay your enemies on the battlefield and claim victory!
           </li>
-          <li>
-            Recruit many heroes to help your{" "}
-            <strong className="text-secondary">journey</strong>
+          <li className="wrap-break-word">
+            <strong className="text-secondary">
+              Recruit many heroes to help your journey:
+            </strong>{" "}
+            unite forces with mighty warriors for them to aid your conquest!
           </li>
         </ul>
+      </div>
+      <div className="grid place-items-center">
+        <h1 className="m-4 text-3xl">Developed By ARS Inc.</h1>
+        <div className="w-75 h-25 bg-primary">Logo place</div>
       </div>
     </div>
   );
