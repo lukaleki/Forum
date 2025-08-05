@@ -1,23 +1,19 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import discordIcon from "@/public/discord.png";
 import facebookIcon from "@/public/facebook.png";
 import emailIcon from "@/public/email.png";
 
 function Nav() {
-  const [dark, setDark] = useState(false);
   const [isPagesOpened, setIsPagesOpened] = useState(false);
   const [isSocialsOpened, setIsSocialsOpened] = useState(false);
 
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", dark);
-  }, [dark]);
   return (
-    <div className="flex p-2 bg-primary h-10 justify-between">
+    <div className="rounded-b-xs flex p-2 bg-primary h-10 justify-between">
       <button
         onClick={() => setIsPagesOpened(!isPagesOpened)}
-        className="bg-primary h-5 rounded-xs"
+        className="text-xl"
       >
         pages
       </button>
@@ -42,7 +38,7 @@ function Nav() {
 
       <button
         onClick={() => setIsSocialsOpened(!isSocialsOpened)}
-        className="bg-primary h-5 rounded-xs"
+        className="text-xl"
       >
         socials
       </button>

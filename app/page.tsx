@@ -1,8 +1,12 @@
 import React from "react";
+import Image from "next/image";
+import knightImage from "@/public/knight-back.jpg";
+import NatureImage from "@/public/nature-placeholder.jpg";
 
 export default function Home() {
   return (
     <div className="flex justify-evenly items-center flex-col text-center gap-2 p-2">
+      {/* <Image src={NatureImage} width={500} height={300} alt="nature" /> */}
       <div>
         <h1 className="m-4 text-3xl">RTS-RogueLite</h1>
         <p>
